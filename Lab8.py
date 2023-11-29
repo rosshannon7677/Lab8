@@ -33,6 +33,10 @@ plt.title('Original'), plt.xticks([]), plt.yticks([])
 plt.subplot(3, 2, 2), plt.imshow(imgGray, cmap='gray')
 plt.title('Grayscale'), plt.xticks([]), plt.yticks([])
 
+# Canny Edge Detection
+plt.subplot(3, 2, 6), plt.imshow(canny, cmap='gray')
+plt.title('Canny Edge Image'), plt.xticks([]), plt.yticks([])
+
 # Sobel X
 plt.subplot(3, 2, 3), plt.imshow(sobelX, cmap='gray')
 plt.title('Sobel X'), plt.xticks([]), plt.yticks([])
@@ -45,9 +49,6 @@ plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
 plt.subplot(3, 2, 5), plt.imshow(sobelSum, cmap='gray')
 plt.title('Sobel Sum'), plt.xticks([]), plt.yticks([])
 
-# Canny Edge Detection
-plt.subplot(3, 2, 6), plt.imshow(canny, cmap='gray')
-plt.title('Canny Edge Image'), plt.xticks([]), plt.yticks([])
 
 plt.tight_layout()
 plt.show()
